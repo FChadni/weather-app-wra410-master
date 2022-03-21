@@ -57,22 +57,22 @@ function displayResults(data){
   description.innerText = data.weather[0].description;
 
   let low = document.querySelector('.low_num');
-  low.innerText = `${Math.floor(data.main.temp_min)}°F`;
+  low.innerText = `${Math.floor(data.main.temp_min)}°F\nLow`;
 
   let hi = document.querySelector('.hi_num');
-  hi.innerText = `${Math.floor(data.main.temp_max)}°F`;
+  hi.innerText = `${Math.floor(data.main.temp_max)}°F\nHi`;
 
   let feels_like = document.querySelector('.feels_like_num');
-  feels_like.innerText = `${Math.floor(data.main.feels_like)}%`;
+  feels_like.innerText = `${Math.floor(data.main.feels_like)}%\nFeels like`;
 
   let humidity = document.querySelector('.humidity_num');
-  humidity.innerHTML = `${Math.floor(data.main.humidity)}%`;
+  humidity.innerHTML = `${Math.floor(data.main.humidity)}%\nHumidity`;
 
   let wind = document.querySelector('.wind_num');
-  wind.innerHTML = `${Math.floor(data.wind.speed)} mps`;
+  wind.innerHTML = `${Math.floor(data.wind.speed)} mps\nWind`;
 
   let visibility = document.querySelector('.visibility_num');
-  visibility.innerHTML = `${Math.floor(data.visibility)} m`;
+  visibility.innerHTML = `${Math.floor(data.visibility)} m\nVisibility`;
 
 }
 

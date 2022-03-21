@@ -38,6 +38,10 @@ function getWeather() {
       }).then(displayResults);
 }
 
+function getElement(id) {
+  return document.getElementById(id);
+}
+
 function displayResults(data){
   console.log(data);
   let city = document.getElementById('cityname');

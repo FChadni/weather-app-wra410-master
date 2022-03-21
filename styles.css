@@ -110,7 +110,13 @@ body {
 
 #icon {
     width: 65px;
+    transition: 4s;
 }
+
+#icon:hover {
+    color: violet;
+    transform: rotate3d(1, 1, 1, 360deg);
+ }
 
 .location{
     padding-bottom: 25px;
@@ -146,11 +152,39 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 25px;
+    /*padding-left: 25px;*/
 }
 
 #toggle{
     width: 24px;
     cursor: pointer;
     background-color: peru;
+}
+
+@media only screen and (min-width: 330px) and (max-width: 550px) {
+    .container2{
+        display: flex;
+        flex-direction: column;
+    }
+    .low, .hi,.feels_like, .humidity, .wind, .visibility{
+        padding: 10px;
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+
+    .low p, .hi p, .feels_like p, .humidity p, .wind p, .visibility p{
+        font-size: 0.5rem;
+    }
+
+    .content-container {
+        width: 80%;
+        max-width: 600px;
+        padding: 20px;
+    }
+    #temp {
+        margin: 0;
+    }
+    .current{
+        padding-bottom: 25px;
+    }
 }

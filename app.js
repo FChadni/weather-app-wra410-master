@@ -60,6 +60,39 @@ function displayResults(data){
   let description = document.getElementById('description');
   description.innerText = data.weather[0].description;
 
+  let x = data.weather[0].description;
+  if(x === "clear sky"){
+    const container = document.querySelector('body');
+    container.style.backgroundImage =  "url('images/cloud.jpg')";
+  }
+  if(x === "few clouds: 11-25%" || x ==="scattered clouds: 25-50%" || x==="broken clouds: 51-84%"
+      || x==="overcast clouds: 85-100%"){
+    const container = document.querySelector('body');
+    container.style.backgroundImage =  "url('images/clear.jpg')";
+  }
+  if(x === "moderate rain" || x === "light rain" || x === "heavy intensity rain" || x === "very heavy rain"
+      || x === "extreme rain" || x === "freezing rain" || x === "light intensity shower rain" || x === "shower rain"
+      || x === "heavy intensity shower rain" || x==="ragged shower rain\t"){
+    const container = document.querySelector('body');
+    container.style.backgroundImage =  "url('images/rain.gif')";
+  }
+  if(x === "thunderstorm" || x === "thunderstorm with light rain" || x === "thunderstorm with rain"){
+    const container = document.querySelector('body');
+    container.style.backgroundImage =  "url('images/thunderstrom.gif')";
+  }
+  if(x === "light snow" || x==="Snow" || x==="Heavy snow" || x==="Sleet" || x==="Light shower sleet"
+      || x==="Shower sleet" || x==="Light rain and snow" || x==="Rain and snow" || x==="Light shower snow"
+      || x==="Shower snow" || x==="Heavy shower snow"){
+    const container = document.querySelector('body');
+    container.style.backgroundImage =  "url('images/snow.gif')";
+  }
+  if(x === "mist" || x==="Smoke" || x==="Haze" || x==="sand/ dust whirls" || x==="fog" || x==="sand" || x==="dust"
+      || x==="volcanic ash" || x==="squalls" || x==="tornado"){
+    const container = document.querySelector('body');
+    container.style.backgroundImage =  "url('images/mist.jpg')";
+  }
+
+
   let low = document.querySelector('.low_num');
   low.innerText = `${Math.floor(data.main.temp_min)}°F\nLow`;
 

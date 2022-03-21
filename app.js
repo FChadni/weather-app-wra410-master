@@ -97,9 +97,9 @@ var toggle = document.getElementById('toggle');
 toggle.onclick = function (){
   document.body.classList.toggle("dark-mode");
   // if(document.body.classList.contains("dark-mode")){
-  //   toggle.src = "image/toggle_light.png"
+  //   toggle.src = document.getElementById('image/toggle_light.png').style.display="inline-block";
   // }else{
-  //   toggle.src = "image/toggle_dark.png"
+  //   toggle.src = document.getElementById('image/toggle_dark.png').style.display="inline-block";
   // }
 }
 

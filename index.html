@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app WRA 410</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content-container">
+            <!--  Seach bar -->
+            <img src="images/toggle_dark.png" alt="toggle.png" id="toggle">
+
+            <div class="search-container">
+                <label><input type="text" autocomplete="off" id="input-city" placeholder="Enter City ..."></label>
+                <label><button><i class="fa fa-search" id="search"></i></button></label>
+            </div>
+
+            <div class="info-container">
+                <!--  outputs city and date -->
+                <div class="location">
+                    <h2 id="cityname">City Name</h2>
+                    <div class="date">Friday 20 March 2022</div>
+                </div>
+
+                <div class="container2">
+                    <div>
+                        <!--  outputs temp info -->
+                        <div class="current">
+                            <div class="icon-temp-container">
+                                <h1 id="temp">Temp</h1>
+                                <img src="#" id="icon" alt="">
+                            </div>
+                            <p id="description">description</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="current_detail">
+                            <!--  outputs detail info -->
+                            <div>
+                                <div class="low">
+                                    <div class="low_num">20°C</div>
+                                    <p>Low</p>
+                                </div>
+                                <div class="hi">
+                                    <div class="hi_num">30°C</div>
+                                    <p>Hi</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="feels_like">
+                                    <div class="feels_like_num">25 <span>°C</span></div>
+                                    <p>Feels_like</p>
+                                </div>
+                                <div class="humidity">
+                                    <div class="humidity_num">25 <span>%</span></div>
+                                    <p>Humidity </p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="wind">
+                                    <div class="wind_num">25 mph</div>
+                                    <p>Wind Speed</p>
+                                </div>
+                                <div class="visibility">
+                                    <div class="visibility_num">25</div>
+                                    <p>visibility</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

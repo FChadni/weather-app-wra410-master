@@ -65,10 +65,10 @@ function displayResults(data){
     const container = document.querySelector('body');
     container.style.backgroundImage =  "url('images/cloud.jpg')";
   }
-  if(x === "few clouds: 11-25%" || x ==="scattered clouds: 25-50%" || x==="broken clouds: 51-84%"
-      || x==="overcast clouds: 85-100%"){
+  if(x === "few clouds" || x ==="scattered clouds" || x==="broken clouds"
+      || x==="overcast clouds"){
     const container = document.querySelector('body');
-    container.style.backgroundImage =  "url('images/clear.jpg')";
+    container.style.backgroundImage =  "url('images/cloud.jpg')";
   }
   if(x === "moderate rain" || x === "light rain" || x === "heavy intensity rain" || x === "very heavy rain"
       || x === "extreme rain" || x === "freezing rain" || x === "light intensity shower rain" || x === "shower rain"
